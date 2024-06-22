@@ -5,14 +5,18 @@
 }
 
 
-<h3 class="my-4">Are you sure you want to delete document: @Model.Title?</h3>
+<div class="d-flex justify-content-center align-items-center mt-4">
+    <div>
+        <h3 class="my-4">Are you sure you want to delete document: @Model.Title?</h3>
 
-<hr />
+        <hr />
 
-<div>    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Confirm" class="btn btn-danger" />
-        <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@Model.Id">Back to Document</a>
-    </form>
+        <div class="text-center">
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <input type="submit" value="Confirm" class="btn btn-danger" />
+                <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@Model.Id">Back to Document</a>
+            </form>
+        </div>
+    </div>
 </div>
