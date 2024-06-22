@@ -46,7 +46,13 @@
 
     <footer class="border-top footer text-muted">
         <div class="container-fluid">
-            &copy; 2024 EasyDocs - Microsoft Web Development
+            <div class="d-none d-md-block">
+                <span class="float-start">&copy; 2024 EasyDocs - Microsoft Web Development</span>
+                <span class="float-end" id="currentDateTime"></span>
+            </div>
+            <div class="d-block d-md-none">
+                <span class="text-center d-block">&copy; 2024 EasyDocs - Microsoft Web Development</span>
+            </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
